@@ -63,7 +63,7 @@ if ($status === false) {
         <div class="container jumbotron">
             <a href="detail.php"></a>
             <!-- テーブルのヘッダーを表示 -->
-            <table>
+            <table border="1">
                 <thead>
                     <tr>
                         <th>No.</th>
