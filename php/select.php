@@ -1,19 +1,5 @@
 <?php
-//【重要】
-/**
- * DB接続のための関数をfuncs.phpに用意
- * require_onceでfuncs.phpを取得
- * 関数を使えるようにする。
- */
-            // try {
-            //     $db_name = 'gs_db_class3';    //データベース名
-            //     $db_id   = 'root';      //アカウント名
-            //     $db_pw   = '';      //パスワード：MAMPは'root'
-            //     $db_host = 'localhost'; //DBホスト
-            //     $pdo = new PDO('mysql:dbname=' . $db_name . ';charset=utf8;host=' . $db_host, $db_id, $db_pw);
-            // } catch (PDOException $e) {
-            //     exit('DB Connection Error:' . $e->getMessage());
-            // }
+//1.データ登録
 require_once('funcs.php');
 $pdo = db_conn();
 
@@ -47,11 +33,12 @@ if ($status === false) {
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>フリーアンケート表示</title>
-    <link rel="stylesheet" href="css/range.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポモドーロアプリ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         div {
             padding: 10px;

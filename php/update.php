@@ -1,18 +1,9 @@
 
 <?php
-
-//PHP:コード記述/修正の流れ
-//1. insert.phpの処理をマルっとコピー。
-//2. $id = $_POST["id"]を追加
-//3. SQL修正
-//   "UPDATE テーブル名 SET 変更したいカラムを並べる WHERE 条件"
-//   bindValueにも「id」の項目を追加
-//4. header関数"Location"を「select.php」に変更
 //1. POSTデータ取得
 $todo   = $_POST['todo'];
 $ref  = $_POST['ref'];
 $next    = $_POST['next'];
-// $content = $_POST['content'];
 $id    = $_POST['id'];
 
 //2. DB接続します
