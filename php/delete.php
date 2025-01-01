@@ -9,7 +9,7 @@ $pdo = db_conn();
 //３．データ登録SQL作成
 //ガチで削除されるので、フラグを１つ作り、ソフトデリートをするのが良い
 $stmt = $pdo->prepare('
-                        DELETE FROM gs_an_table WHERE id =:id
+                        DELETE FROM pomodoro WHERE id =:id
                         ');
 $stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $status = $stmt->execute(); //実行
