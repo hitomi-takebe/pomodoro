@@ -29,9 +29,6 @@ if ($status === false) {
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <style>
-        div{
-            margin: 0 auto;
-        }
         .submit {
             max-width: 300px;
             margin-bottom: 20px;
