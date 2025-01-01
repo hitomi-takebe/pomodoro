@@ -15,10 +15,10 @@ if ($status === false) {
 } else {
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $view .= '<tr>';
-        $view .= '<td><a href="detail.php?id=' . $result['id'] .  '"></a></td>';
-        $view .= '<td>' . $result['id'] . ' </td><td> ' . $result['date'] . '</td><td>' . $result['todo'] . '</td><td>' . $result['ref'] . '</td><td>' . $result['todo'] . '</td>';
+        $view .= '<td><a href="detail.php?id=' . $result['id'] .  '>'.$result['id'].'</a></td>';
+        $view .= '<td> ' . $result['date'] . '</td><td>' . $result['todo'] . '</td><td>' . $result['ref'] . '</td><td>' . $result['todo'] . '</td>';
         $view .= '<td>';
-        $view .= '<td href="delete.php?id=' . $result['id'] .  '">';
+        $view .= '<a href="delete.php?id=' . $result['id'] .  '>';
         $view .= '[削除]';
         $view .= '</a></td>';
         $view .= '</tr>';
