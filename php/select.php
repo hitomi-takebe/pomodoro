@@ -35,7 +35,9 @@ if ($status === false) {
         $view .= '[削除]';
         $view .= '</a></td>';
         $view .= '</tr>';
-    }
+    };
+    echo
+    "</tbody></table>";
 }
 
 ?>
@@ -77,8 +79,6 @@ if ($status === false) {
             <a href="detail.php"></a>
             <!-- テーブルのヘッダーを表示 -->
                     <?= $view ?>
-                </tbody>
-            </table>
         </div>
     </div>
     <!-- Main[End] -->
