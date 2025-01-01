@@ -17,19 +17,7 @@ if ($status === false) {
 } else {
     $result = $stmt->fetch();
 }
-
-//jQueryでいうconsole.logで動作確認をしよう！！
-// var_dump($result)
-
 ?>
-<!--
-２．HTML
-以下にindex.phpのHTMLをまるっと貼り付ける！
-(入力項目は「登録/更新」はほぼ同じになるから)
-※form要素 input type="hidden" name="id" を１項目追加（非表示項目）
-※form要素 action="update.php"に変更
-※input要素 value="ここに変数埋め込み"
--->
 
 
 <!DOCTYPE html>

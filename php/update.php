@@ -16,16 +16,6 @@ $next    = $_POST['next'];
 $id    = $_POST['id'];
 
 //2. DB接続します
-//*** function化する！  *****************
-// try {
-//     $db_todo = 'gs_db_class3'; //データベース名
-//     $db_id   = 'root'; //アカウント名
-//     $db_pw   = ''; //パスワード：MAMPは'root'
-//     $db_host = 'localhost'; //DBホスト
-//     $pdo = new PDO('mysql:dbtodo=' . $db_todo . ';charset=utf8;host=' . $db_host, $db_id, $db_pw);
-// } catch (PDOException $e) {
-//     exit('DB Connection Error:' . $e->getMessnext());
-// }
 require_once('funcs.php');
 $pdo = db_conn();
 

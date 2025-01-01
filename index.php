@@ -23,10 +23,7 @@
                 <label for="next">③次からはこうしたい</label>
                 <input type="text" class="next" name="next" placeholder="次はこうする"><br>
                 <input type="submit" class="submit" value="確認する">
-                <p>一覧表示</p>
-                <?= $view ?>
-
-                <p>フォーム形式で表示</p>
+                <p class="submit"><a href="php/select.php">一覧表示</a></p>
             </form>
         </div>
     </div>
