@@ -16,7 +16,7 @@ if ($status === false) {
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $view .= '<p>';
         $view .= '<a href="detail.php?id=' . $result['id'] .  '">';
-        $view .= $result['id'] . ' : ' . $result['date'] . ' : ' . $result['todo'] . $result['ref'] . $result['next'];
+        $view .= $result['id'] . ' : ' . $result['date'] . ' : ' . $result['todo'] . $result['ref'] . $result['todo'];
         $view .= '</a>';
         $view .= '<a href="delete.php?id=' . $result['id'] .  '">';
         $view .= '[削除]';
@@ -62,6 +62,20 @@ if ($status === false) {
     <div>
         <div class="container jumbotron">
             <a href="detail.php"></a>
+            <!-- テーブルのヘッダーを表示 -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>登録日</th>
+                        <th>①todo</th>
+                        <th>②振り返り</th>
+                        <th>③次からはこうしたい</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
             <?= $view ?>
         </div>
     </div>
