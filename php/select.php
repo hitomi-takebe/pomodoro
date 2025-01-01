@@ -75,9 +75,9 @@ if ($status === false) {
                     </tr>
                 </thead>
                 <tbody>
+                    <?= $view ?>
                 </tbody>
             </table>
-            <?= $view ?>
         </div>
     </div>
     <!-- Main[End] -->
