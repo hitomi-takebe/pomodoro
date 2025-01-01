@@ -25,7 +25,7 @@
     ?>
 
     <div class="card">
-        <span class="card__title">ユーザー登録</span>
+        <span class="card__title">次の25分で何をする？</span>
         <p class="card__content">こちらで登録いたします。</p>
         <div class="card__form">
             <p>todo:<?= $todo ?></P>

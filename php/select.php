@@ -16,7 +16,7 @@ if ($status === false) {
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $view .= '<tr>';
         $view .= '<td>';
-        $view .= '<a href="detail.php?id=' . $result['id'] .  '">'.$result['id'].'</a>';
+        $view .= '<a href="detail.php?id=' . $result['id'] .  '">' . $result['id'] . '</a>';
         $view .= '</td>';
         $view .= '<td> ' . $result['date'] . '</td><td>' . $result['todo'] . '</td><td>' . $result['ref'] . '</td><td>' . $result['next'] . '</td>';
         $view .= '<td>';
@@ -51,13 +51,7 @@ if ($status === false) {
 <body id="main">
     <!-- Head[Start] -->
     <header>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="../index.php">データ登録</a>
-                </div>
-            </div>
-        </nav>
+        <a class="submit" href="../index.php">データ登録</a>
     </header>
     <!-- Head[End] -->
 
