@@ -18,7 +18,7 @@ if ($status === false) {
         $view .= '<td>';
         $view .= '<a href="detail.php?id=' . $result['id'] .  '>'.$result['id'].'</a>';
         $view .= '</td>';
-        $view .= '<td> ' . $result['date'] . '</td><td>' . $result['todo'] . '</td><td>' . $result['ref'] . '</td><td>' . $result['todo'] . '</td>';
+        $view .= '<td> ' . $result['date'] . '</td><td>' . $result['todo'] . '</td><td>' . $result['ref'] . '</td><td>' . $result['next'] . '</td>';
         $view .= '<td>';
         $view .= '<a href="delete.php?id=' . $result['id'] .  '>';
         $view .= '[削除]';
