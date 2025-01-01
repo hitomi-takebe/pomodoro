@@ -16,7 +16,7 @@ if ($status === false) {
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $view .= '<p>';
         $view .= '<a href="detail.php?id=' . $result['id'] .  '">';
-        $view .= $result['id'] . ' : ' . $result['date'] . ' : ' . $result['todo'];
+        $view .= $result['id'] . ' : ' . $result['date'] . ' : ' . $result['todo'] . $result['ref'] . $result['next'];
         $view .= '</a>';
         $view .= '<a href="delete.php?id=' . $result['id'] .  '">';
         $view .= '[削除]';
