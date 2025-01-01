@@ -13,19 +13,6 @@ if ($status === false) {
     $error = $stmt->errorInfo();
     exit('SQLError:' . print_r($error, true));
 } else {
-    echo
-    "<table>
-        <thead>
-            <tr>
-                <th>No.</th>
-                <th>登録日</th>
-                <th>①todo</th>
-                <th>②振り返り</th>
-                <th>③次からはこうしたい</th>
-                <th>削除</th>
-            </tr>
-        </thead>
-        <tbody>";
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $view .= '<tr>';
         $view .= '<td><a href="detail.php?id=' . $result['id'] .  '"></a></td>';
@@ -35,9 +22,7 @@ if ($status === false) {
         $view .= '[削除]';
         $view .= '</a></td>';
         $view .= '</tr>';
-    };
-    echo
-    "</tbody></table>";
+    }
 }
 
 ?>
@@ -78,7 +63,21 @@ if ($status === false) {
         <div class="container jumbotron">
             <a href="detail.php"></a>
             <!-- テーブルのヘッダーを表示 -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>登録日</th>
+                        <th>①todo</th>
+                        <th>②振り返り</th>
+                        <th>③次からはこうしたい</th>
+                        <th>削除</th>
+                    </tr>
+                </thead>
+                <tbody>
                     <?= $view ?>
+                </tbody>
+            </table>
         </div>
     </div>
     <!-- Main[End] -->
