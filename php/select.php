@@ -14,14 +14,14 @@ if ($status === false) {
     exit('SQLError:' . print_r($error, true));
 } else {
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        $view .= '<p>';
-        $view .= '<a href="detail.php?id=' . $result['id'] .  '">';
-        $view .= $result['id'] . ' : ' . $result['date'] . ' : ' . $result['todo'] . $result['ref'] . $result['todo'];
-        $view .= '</a>';
-        $view .= '<a href="delete.php?id=' . $result['id'] .  '">';
+        $view .= '<tr>';
+        $view .= '<td><a href="detail.php?id=' . $result['id'] .  '"></a></td>';
+        $view .= '<td>' . $result['id'] . ' </td><td> ' . $result['date'] . '</td><td>' . $result['todo'] . '</td><td>' . $result['ref'] . '</td><td>' . $result['todo'] . '</td>';
+        $view .= '<td>';
+        $view .= '<td href="delete.php?id=' . $result['id'] .  '">';
         $view .= '[削除]';
-        $view .= '</a>';
-        $view .= '</p>';
+        $view .= '</a></td>';
+        $view .= '</tr>';
     }
 }
 
@@ -71,6 +71,7 @@ if ($status === false) {
                         <th>①todo</th>
                         <th>②振り返り</th>
                         <th>③次からはこうしたい</th>
+                        <th>削除</th>
                     </tr>
                 </thead>
                 <tbody>
