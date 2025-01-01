@@ -27,7 +27,8 @@ SQLの接続にかなり時間がかかりました。落ち着いてコード�
 datatime↓
 https://blog.codecamp.jp/php-datetime
 
-リンクのボタン作成↓
-https://magazine.techacademy.jp/magazine/26699
+phpでの表の作りかた↓
+https://design-tera.com/blog/archives/6490/
+
 色味参考↓
 https://colorbase.app/ja
