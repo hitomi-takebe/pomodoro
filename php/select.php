@@ -41,21 +41,20 @@ if ($status === false) {
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <style>
-        div {
-            padding: 10px;
-            font-size: 16px;
+        .submit {
+            max-width: 300px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 
-<body id="main">
-    <!-- Head[Start] -->
-    <header>
-        <a class="submit" href="../index.php">データ登録</a>
-    </header>
-    <!-- Head[End] -->
+<header>
+    <a class="submit" href="../index.php">戻る</a>
+</header>
 
-    <!-- Main[Start] -->
+<body>
+    <!-- Head[Start] -->
+
     <div>
         <div class="container jumbotron">
             <a href="detail.php"></a>
