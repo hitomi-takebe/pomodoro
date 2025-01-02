@@ -52,12 +52,20 @@ if ($status === false) {
                 <label>todo：<input type="text" name="todo" value="<?= $result['todo'] ?>"></label><br>
                 <label>振り返り：<input type="text" name="ref" value="<?= $result['ref'] ?>"></label><br>
                 <label>次回：<input type="text" name="next" value="<?= $result['next'] ?>"></label><br>
-                <!-- <label><textarea name="content" rows="4" cols="40"><?= $result['name'] ?></textarea></label><br> -->
                 <input type="hidden" name="id" value="<?= $result['id'] ?>">
-                <input type="submit" class="submit" value="送信">
+                <input type="submit" class="submit" value="修正">
             </fieldset>
         </div>
     </form>
+    <!-- タイマー -->
+    <div id="timer">
+        <p><span id="minutes"></span>分</p>
+        <p><span id="seconds"></span>秒</p>
+        <button id="startButton" class="submit">タイマー開始</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/timer.js"></script>
 </body>
 
 </html>
